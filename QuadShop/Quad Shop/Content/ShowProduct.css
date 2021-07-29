@@ -1,0 +1,223 @@
+﻿body {
+    padding: 0;
+    margin: 0 auto;
+    min-height: calc(100vh - 125px);
+}
+
+.show_product_wrapper {
+    padding: 0;
+    margin: 0 auto;
+    width: 1300px;
+    min-height: calc(100vh - 125px);
+    display: flex;
+}
+
+.side {
+    min-height: calc(100vh - 165px);
+    width: 300px;
+    border: 2px solid;
+    margin: 20px 0 20px 0;
+    background-color: #55575A;
+    border-color: #bdc0c7;
+}
+
+.category_text_all {
+    height: 30px;
+    width: 260px;
+    background-color: #e6eaf1;
+    border: 2px solid;
+    border-radius: 3px;
+    border-color: #bdc0c7;
+    margin-top: 8px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #122538;
+}
+
+.category_text {
+    height: 30px;
+    width: 260px;
+    text-decoration: none;
+    background-color: #e6eaf1;
+    border: 2px solid;
+    border-radius: 3px;
+    border-color: #bdc0c7;
+    margin-top: 8px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #122538;
+}
+
+    .category_text:hover {
+        border-color: #122538;
+        background-color: #FFFFFF;
+    }
+
+.selected_category_text {
+    height: 30px;
+    width: 260px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: 2px solid;
+    border-radius: 3px;
+    border-color: #122538;
+    margin-top: 8px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+    color: #122538;
+}
+
+.main {
+    padding: 35px 35px 0 35px;
+}
+
+.main_field {
+    width: 930px;
+    display: grid;
+    grid-template-columns: 465px 465px;
+    min-height: calc(100vh - 160px);
+}
+
+.product_cell {
+    width: 465px;
+    height: 395px;
+    border-bottom: 2px solid;
+    border-color: #adadad;
+}
+
+.product_cell_top {
+    width: 465px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cell_img {
+    width: auto;
+    height: 220px;
+}
+
+.product_cell_bottom {
+    height: 100px;
+    width: 465px;
+}
+
+.text_model {
+    height: 45px;
+    width: 465px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .text_model span {
+        color: #adadad;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+.text_model_price {
+    height: 45px;
+    width: 465px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .text_model_price span {
+        color: #adadad;
+        font-size: 25px;
+        margin-left: 10px;
+    }
+
+.cell_buttons {
+    width: 465px;
+    height: 55px;
+    display: flex;
+}
+
+.cell_button {
+    margin: 5px 0 0 55px;
+    width: 150px;
+    height: 40px;
+    background: none;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #adadad;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-decoration: none;
+    color: #adadad;
+}
+
+    .cell_button:hover {
+        color: white;
+        border-color: white;
+    }
+
+    .cell_button:active {
+        border-color: black;
+        color: orange;
+    }
+
+.pages_links {
+    width: 930px;
+    height: 30px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.current_page_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px 0 5px;
+    color: #adadad;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #adadad;
+}
+
+    .current_page_link:hover {
+        border-color: white;
+        color: orange;
+    }
+
+    .current_page_link:active {
+        color: red;
+    }
+
+.other_page_link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px 0 5px;
+    color: #adadad;
+    text-decoration: none;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+}
+
+    .other_page_link:hover {
+        font-size: 20px;
+        color: #adadad;
+    }

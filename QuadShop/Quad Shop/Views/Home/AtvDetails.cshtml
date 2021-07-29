@@ -1,0 +1,176 @@
+﻿@model IEnumerable<Quad_Shop.Models.ATVDescription>
+@{
+    ViewBag.Title = "AtvDetails";
+}
+
+<div class="details_wrapper">
+    @foreach (var atv in Model)
+    {
+        <div class="details_overview">
+            <div class="details_overview_container">
+                <div class="details_overview_left">
+                    <img class="overview_left_img" src="~/Images/Images/@atv.Image" alt="">
+                </div>
+                <div class="details_overview_right">
+                    <div class="details_overview_right_container">
+                        <div class="container_text_brand">
+                            <span>@atv.ATVBrand.Brand</span>
+                        </div>
+                        <div class="container_text">
+                            <span>@atv.Model</span>
+                        </div>
+                        <div class="container_text">
+                            <span>@atv.Color</span>
+                        </div>
+                        <div class="container_text">
+                            <span>@atv.Stock pieces available</span>
+                        </div>
+                        <div class="container_text_price">
+                            <span>@atv.Price $</span>
+                        </div>
+                        <div class="add_to_card">
+                            @Html.ActionLink("Add to cart", "AddToCart", "Home", new { id = atv.ATVDescriptionID }, new { @class = "add_to_card_button" })
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="specification">
+            <div class="specification_h">
+                <span>SPECIFICATIONS</span>
+            </div>
+            <div class="specification_text">
+                <div class="specification_text_title">
+                    <span>Engine</span>
+                </div>
+                <table class="atvdetails_table" cellspacing=0>
+                    <tr class="table_dark_line">
+                        <td>Engine Type:</td>
+                        <td>@atv.Engine_Type</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Cylinder Displacement:</td>
+                        <td>@atv.Cylinder_Displacement cc</td>
+                    </tr>
+                    <tr class="table_dark_line">
+                        <td>Fuel System:</td>
+                        <td>@atv.Fuel_System</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Cooling:</td>
+                        <td>@atv.Cooling</td>
+                    </tr>
+                </table>
+                <div class="specification_text_title">
+                    <span>DRIVE TRAIN</span>
+                </div>
+                <table cellspacing=0>
+                    <tr class="table_dark_line">
+                        <td>Trasmission:</td>
+                        <td>@atv.Transmission</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Drive System:</td>
+                        <td>@atv.Drive_System</td>
+                    </tr>
+                    <tr class="table_dark_line">
+                        <td>Locking Differential:</td>
+                        <td>@atv.Locking_Differencial</td>
+                    </tr>
+                </table>
+                <div class="specification_text_title">
+                    <span>CHASSIS / SUSPENSION / BRAKES</span>
+                </div>
+                <table cellspacing=0>
+                    <tr class="table_dark_line">
+                        <td>Front Suspension:</td>
+                        <td>@atv.Front_Suspension</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Rear Suspension:</td>
+                        <td>@atv.Rear_Suspension</td>
+                    </tr>
+                    <tr class="table_dark_line">
+                        <td>Front Brakes:</td>
+                        <td>@atv.Front_Brakes</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Rear Brakes:</td>
+                        <td>@atv.Rear_Brakes</td>
+                    </tr>
+                    <tr class="table_dark_line">
+                        <td>Parking Brakes:</td>
+                        <td>@atv.Parking_Brake</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Wheels:</td>
+                        <td>@atv.Wheels</td>
+                    </tr>
+                </table>
+                <div class="specification_text_title">
+                    <span>DIMENSION</span>
+                </div>
+                <table cellspacing=0>
+                    <tr class="table_dark_line">
+                        <td>Lenght:</td>
+                        <td>@atv.Length cm</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Widht:</td>
+                        <td>@atv.Width cm</td>
+                    </tr>
+                    <tr class="table_dark_line">
+                        <td>Height:</td>
+                        <td>@atv.Hight cm</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Weight:</td>
+                        <td>@atv.Weight kg</td>
+                    </tr>
+                    <tr class="table_dark_line">
+                        <td>Fuel Capacity:</td>
+                        <td>@atv.Fuel_Capacity l</td>
+                    </tr>
+                </table>
+                <div class="specification_text_title">
+                    <span>OTHER</span>
+                </div>
+                <table cellspacing=0>
+                    <tr class="table_dark_line">
+                        <td>Instrumentation:</td>
+                        <td>@atv.Instrumentation</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Brake Lights:</td>
+                        <td>@atv.Brake_Lights</td>
+                    </tr>
+                    <tr class="table_dark_line">
+                        <td>Head Lights:</td>
+                        <td>@atv.Head_Lights</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Turn Signals:</td>
+                        <td>@atv.Turn_Signal</td>
+                    </tr>
+                    <tr class="table_dark_line">
+                        <td>Horn:</td>
+                        <td>@atv.Horn</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Cargo Rocks:</td>
+                        <td>@atv.Cargo_Rocks</td>
+                    </tr>
+                    <tr class="table_dark_line">
+                        <td>Color:</td>
+                        <td>@atv.Color</td>
+                    </tr>
+                    <tr class="table_light_line">
+                        <td>Warranty:</td>
+                        <td>@atv.Warranty month</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    }
+</div>
+

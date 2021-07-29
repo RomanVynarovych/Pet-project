@@ -1,0 +1,83 @@
+D:\Programming\Quad Shop\Quad Shop\bin\Quad Shop.dll.config
+D:\Programming\Quad Shop\Quad Shop\bin\Quad Shop.dll
+D:\Programming\Quad Shop\Quad Shop\bin\Quad Shop.pdb
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\csc.exe
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\csc.exe.config
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\csc.rsp
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\csi.exe
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\csi.exe.config
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\csi.rsp
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.AppContext.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Collections.Immutable.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Console.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Globalization.Calendars.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.IO.Compression.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.IO.FileSystem.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Net.Http.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Net.Sockets.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Reflection.Metadata.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.ValueTuple.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Xml.XPath.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\vbc.exe
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\vbc.exe.config
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\vbc.rsp
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\VBCSCompiler.exe
+D:\Programming\Quad Shop\Quad Shop\bin\roslyn\VBCSCompiler.exe.config
+D:\Programming\Quad Shop\Quad Shop\bin\Antlr3.Runtime.dll
+D:\Programming\Quad Shop\Quad Shop\bin\EntityFramework.dll
+D:\Programming\Quad Shop\Quad Shop\bin\EntityFramework.SqlServer.dll
+D:\Programming\Quad Shop\Quad Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Programming\Quad Shop\Quad Shop\bin\Microsoft.Web.Infrastructure.dll
+D:\Programming\Quad Shop\Quad Shop\bin\Newtonsoft.Json.dll
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.Helpers.dll
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.Mvc.dll
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.Optimization.dll
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.Razor.dll
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.WebPages.Deployment.dll
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.WebPages.dll
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.WebPages.Razor.dll
+D:\Programming\Quad Shop\Quad Shop\bin\WebGrease.dll
+D:\Programming\Quad Shop\Quad Shop\bin\EntityFramework.xml
+D:\Programming\Quad Shop\Quad Shop\bin\EntityFramework.SqlServer.xml
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.Helpers.xml
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.Mvc.xml
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.Optimization.xml
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.Razor.xml
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.WebPages.xml
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.WebPages.Deployment.xml
+D:\Programming\Quad Shop\Quad Shop\bin\System.Web.WebPages.Razor.xml
+D:\Programming\Quad Shop\Quad Shop\bin\Newtonsoft.Json.xml
+D:\Programming\Quad Shop\Quad Shop\bin\Antlr3.Runtime.pdb
+D:\Programming\Quad Shop\Quad Shop\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Programming\Quad Shop\Quad Shop\obj\Debug\Quad Shop.csprojAssemblyReference.cache
+D:\Programming\Quad Shop\Quad Shop\obj\Debug\Quad Shop.csproj.CoreCompileInputs.cache
+D:\Programming\Quad Shop\Quad Shop\obj\Debug\Quad Shop.csproj.CopyComplete
+D:\Programming\Quad Shop\Quad Shop\obj\Debug\Quad Shop.dll
+D:\Programming\Quad Shop\Quad Shop\obj\Debug\Quad Shop.pdb

@@ -1,0 +1,16 @@
+﻿body {
+}
+
+.showordersdetails_description_top {
+    width: 1200px;
+    height: 50px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.showordersdetails_description_top span {
+    font-size: 25px;
+    color: #adadad;
+}

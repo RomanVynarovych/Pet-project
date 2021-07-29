@@ -1,0 +1,101 @@
+﻿body {
+}
+
+.showorderdetails_list_wrapper {
+    min-height: calc(100vh - 90px);
+    width: 1300px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.showorderdetails_top {
+    width: 1300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+}
+
+    .showorderdetails_top span {
+        font-size: 30px;
+        color: #adadad;
+    }
+
+.showorderdetails_table {
+    margin: 0 auto;
+}
+
+        .showorderdetails_table tr th {
+            font-size: 25px;
+            color: #adadad;
+            border-bottom: 2px solid;
+            border-color: #adadad;
+            margin-bottom: 20px;
+        }
+
+.showorderdetails_table_img_top {
+    height: 50px;
+    width: 300px;
+}
+
+.showorderdetails_table_brand_top {
+    height: 50px;
+    width: 150px;
+}
+
+.showorderdetails_table_model_top {
+    height: 50px;
+    width: 250px;
+}
+
+.showorderdetails_table_color_top {
+    height: 50px;
+    width: 200px;
+}
+
+.showorderdetails_table_quantity_top {
+    height: 50px;
+    width: 150px;
+}
+
+.showorderdetails_table_unitprice_top {
+    height: 50px;
+    width: 150px;
+}
+
+
+.showorderdetails_table_img {
+    height: 200px;
+    width: 300px;
+}
+
+    .showorderdetails_table_img img {
+        height: 200px;
+        width: ;
+    }
+
+.showorderdetails_table_brand {
+    height: 200px;
+    width: 150px;
+}
+
+.showorderdetails_table_model {
+    height: 200px;
+    width: 250px;
+}
+
+.showorderdetails_table_color {
+    height: 200px;
+    width: 200px;
+}
+
+.showorderdetails_table_quantity {
+    height: 200px;
+    width: 150px;
+}
+
+.showorderdetails_table_unitprice {
+    height: 200px;
+    width: 150px;
+}

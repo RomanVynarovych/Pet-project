@@ -1,0 +1,41 @@
+﻿@model IEnumerable<Quad_Shop.Models.Order>
+@{
+    ViewBag.Title = "ShowOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="orders_list_wrapper">
+    <div class="orders_top">
+        <span>Orders</span>
+    </div>
+    <div class="orders_cell_top">
+        <table class="orders_table" cellspacing=0>
+            <tr>
+                <th class="orders_table_id"><span>OrderID</span></th>
+                <th class="orders_table_fname"><span>First Name</span></th>
+                <th class="orders_table_mname"><span>Middle Name</span></th>
+                <th class="orders_table_lname"><span>Last Name</span></th>
+                <th class="orders_table_tprice"><span>Total Price</span></th>
+                <th class="orders_table_date"><span>Order Date</span></th>
+                <th class="orders_table_orders_details"></th>
+            </tr>
+        </table>
+    </div>
+    <div class="orders_cell">
+        @foreach (var o in Model)
+        {
+            <table class="orders_table" cellspacing=0>
+                <tr>
+                    <th class="orders_table_id"><span>@o.OrderID</span></th>
+                    <th class="orders_table_fname"><span>@o.First_Name</span></th>
+                    <th class="orders_table_mname"><span>@o.Middle_Name</span></th>
+                    <th class="orders_table_lname"><span>@o.Last_Name</span></th>
+                    <th class="orders_table_tprice"><span>@o.Total_Price $</span></th>
+                    <th class="orders_table_date"><span>@o.Order_Date</span></th>
+                    <th class="orders_table_orders_details">@Html.ActionLink("Orders Details", "ShowOrderDetails", "Home", new { id = o.OrderID }, new {@class = "orders_table_button"})</th>
+                </tr>
+            </table>
+        }
+    </div>
+</div>
+

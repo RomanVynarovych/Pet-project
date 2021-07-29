@@ -1,0 +1,41 @@
+﻿@model Quad_Shop.Models.Order
+@{
+    ViewBag.Title = "CreateOrder";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="createorders_list_wrapper">
+    <div class="createorders_top">
+        <span>Ordering</span>
+    </div>
+    <div class="createorders_table">
+        @using (Html.BeginForm())
+        {
+            @Html.HiddenFor(model => model.OrderID)
+            @Html.HiddenFor(model => model.Total_Price)
+            @Html.HiddenFor(model => model.Order_Date)
+
+            <table class="createorder_table">
+                <tr>
+                    <td><span>First Name</span></td>
+                    <td>@Html.EditorFor(model => model.First_Name, new { htmlAttributes = new { @class = "createorders_editorfor" } })</td>
+                </tr>
+                <tr>
+                    <td><span>Middle Name</span></td>
+                    <td>@Html.EditorFor(model => model.Middle_Name, new { htmlAttributes = new { @class = "createorders_editorfor" } })</td>
+                </tr>
+                <tr>
+                    <td><span>Last Name</span></td>
+                    <td>@Html.EditorFor(model => model.Last_Name, new { htmlAttributes = new { @class = "createorders_editorfor" } })</td>
+                </tr>
+
+            </table>
+            <div class="createorders_btn">
+                <input class="createorders_input" type="submit" value="Save" />
+                @Html.ActionLink("Cancel", "Cart", "Home", null, new { @class = "createorders_cancell" })
+            </div>
+
+        }
+    </div>
+</div>
+

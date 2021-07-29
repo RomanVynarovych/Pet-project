@@ -1,0 +1,55 @@
+﻿
+@model IEnumerable<Quad_Shop.Models.ATVDescription>
+@{
+    ViewBag.Title = "EditList";
+}
+
+<div class="edit_list_wrapper">
+    <div class="edit_top_panel">
+        <div class="edit_top_panel_left">
+            @Html.ActionLink("ADD NEW", "AddNewATV", "Home", null, new { @class = "edit_top_panel_button" })
+        </div>
+        <div class="edit_top_panel_right">
+            @Html.ActionLink("ShowOrder", "ShowOrder", "Home", null, new { @class = "edit_top_panel_button" })
+        </div>
+    </div>
+    @foreach (var atv in Model)
+    {
+        <div class="edit_list_cell">
+            <div class="edit_list_cell_img">
+                <img src="~/Images/Images/@atv.Image" alt="">
+            </div>
+            <div class="edit_list_cell_description">
+                <div class="edit_cell_description_table">
+                    <table class="edit_description_table" cellspacing=0>
+                        <tr>
+                            <td class="edit_left_item">Brand:</td>
+                            <td class="edit_right_item">@atv.ATVBrand.Brand</td>
+                        </tr>
+                        <tr>
+                            <td class="edit_left_item">Model:</td>
+                            <td class="edit_right_item">@atv.Model</td>
+                        </tr>
+                        <tr>
+                            <td class="edit_left_item">Color:</td>
+                            <td class="edit_right_item">@atv.Color</td>
+                        </tr>
+                        <tr>
+                            <td class="edit_left_item">In stock:</td>
+                            <td class="edit_right_item">@atv.Stock</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="edit_cell_description_button">
+                    <div class="edit_button_div">
+                        @Html.ActionLink("Edit", "ProductEditing", "Home", new { id = atv.ATVDescriptionID }, new {@class = "edit_button_div_edit" })
+                    </div>
+                    <div class="edit_button_div">
+                        @Html.ActionLink("Delete", "DeleteATV", "Home", new { id = atv.ATVDescriptionID }, new { @class = "edit_button_div_delete" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+</div>
+

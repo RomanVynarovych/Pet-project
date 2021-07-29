@@ -1,0 +1,30 @@
+﻿body {
+}
+
+.cartTotalItems_div {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .cartTotalItems_div div {
+        width: 30px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: url("shopping_cart.png") no-repeat;
+        background-size: 30px 30px;
+    }
+
+.cartTotalItems_actionlink {
+    font-size: 18px;
+    padding: 4px 0 0 13px;
+    width: 30px;
+    height: 30px;
+    display: block;
+    color: black;
+    text-decoration: none;
+}

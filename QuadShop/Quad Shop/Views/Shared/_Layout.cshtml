@@ -1,0 +1,83 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="~/Content/Layout_css.css">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" type="text/css" href="~/Content/Index.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/ShowProduct.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/AtvDetails.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/AtvDetails.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/EditList.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Productediting.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/AddNewATV.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/Cart.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/partial_carttotalitems.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/ShowOrder.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/ShowOrderDetails.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/ShowOrderDetailsPartial.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/CreateOrder.css">
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="header_wrapper">
+                <div class="header_left">
+                    <div class="header_logo">
+                        <span>Quad Shop</span>
+                    </div>
+                    <nav class="navigation">
+                        <ul class="menu">
+                            <li class="menu_item">
+                                @Html.ActionLink("HOME", "Index", "HOME", new { @class = "menu_item_text" })
+                            </li>
+                            <li class="menu_item">
+                                @Html.ActionLink("PRODUCT", "ShowProduct", "HOME", new { @class = "menu_item_text" })
+                            </li>
+                            <li class="menu_item">
+                                <span>ACCESSORIES</span>
+                            </li>
+                        </ul>
+                    </nav>
+
+                </div>
+                <div class="header_right">
+                    <div class="edit_button">
+                        @Html.ActionLink("editing", "EditList", "HOME", new { @class = "header_button_editing" })
+                    </div>
+                    <div class="cart_icon">
+                        @Html.Action("CartTotalItems", "HOME", new { @class = "header_button_carttotalitems" })
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer_wrapper">
+                <div class="footer_logo">
+                    <span>Quad Shop</span>
+                </div>
+                <div class="copyright">
+                    <span> © 2021 All right is reserved.</span>
+                </div>
+                <div class="footer_icons">
+                    <div class="footer_link"><a href="#"><img class="footer_link_img" src="~/Images/Icons/whatsapp.png" alt=""></a></div>
+                    <div class="footer_link"><a href="#"><img class="footer_link_img" src="~/Images/Icons//youtube.png" alt=""></a></div>
+                    <div class="footer_link"><a href="#"><img class="footer_link_img" src="~/Images/Icons//instagram.png" alt=""></a></div>
+                    <div class="footer_link"><a href="#"><img class="footer_link_img" src="~/Images/Icons//twitter.png" alt=""></a></div>
+                    <div class="footer_link"><a href="#"><img class="footer_link_img" src="~/Images/Icons//facebook.png" alt=""></a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

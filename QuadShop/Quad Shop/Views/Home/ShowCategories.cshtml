@@ -1,0 +1,18 @@
+﻿@model IEnumerable<string>
+@{
+    ViewBag.Title = "ShowCategories";
+}
+
+@Html.ActionLink("All ATV", "ShowProduct", "Home", new {
+    cylinderdisplacementfrom = ViewBag.intcylinder_displacement_from,
+    cylinderdisplacementto = ViewBag.intcylinder_displacement_to,
+    price_from = ViewBag.intprice_from,
+    price_to = ViewBag.intprice_to,
+    page = 1 }, new { @class = "category_text_all" })
+
+@foreach (var category in Model)
+{
+    @Html.ActionLink(category, "ShowProduct", "Home", new { category = category, cylinderdisplacementfrom = ViewBag.intcylinder_displacement_from,
+    cylinderdisplacementto = ViewBag.intcylinder_displacement_to, price_from = ViewBag.intprice_from, price_to = ViewBag.intprice_to, page = 1},
+    new { @class = (category == ViewBag.SelectedCategory ? "selected_category_text" : "category_text") })
+}

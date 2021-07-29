@@ -1,0 +1,6 @@
+﻿@model Quad_Shop.Models.Order
+
+<div class="showordersdetails_description_top">
+    <span>Order №@Html.DisplayFor(model => model.OrderID) @Html.DisplayFor(model => model.First_Name) @Html.DisplayFor(model => model.Middle_Name) @Html.DisplayFor(model => model.Last_Name) </span>
+    <span>Total: @Html.DisplayFor(model => model.Total_Price) $</span>
+</div>

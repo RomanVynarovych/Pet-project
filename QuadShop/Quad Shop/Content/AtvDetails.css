@@ -1,0 +1,177 @@
+﻿body {
+}
+
+.details_wrapper {
+    margin: 0 auto;
+    width: 1300px;
+    min-height: calc(100vh - 90px);
+}
+
+.details_overview {
+    width: 1300px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("details_bg.jpg");
+}
+
+.details_overview_container {
+    width: 1300px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url("overlay.png") center 300px repeat-x;
+}
+
+.details_overview_left {
+    width: 900px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overview_left_img {
+    height: 500px;
+    margin-top: 150px;
+    width: auto;
+}
+
+.details_overview_right {
+    width: 400px;
+    height: 700px;
+}
+
+.details_overview_right_container {
+    margin: 250px 0 0 0;
+    width: 300px;
+    height: 400px;
+    padding: 9px 0 0 9px;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.container_text_brand {
+    width: 300px;
+    height: 45px;
+    font-size: 42px;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_text {
+    width: 300px;
+    height: 45px;
+    font-size: 33px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container_text_price {
+    width: 300px;
+    height: 45px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #790002;
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.add_to_card {
+    width: 300px;
+    height: 70px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.add_to_card_button {
+    background-color: #6cab1f;
+    width: 250px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+        .add_to_card_button:hover {
+            background-color: #8bca3e;
+        }
+
+.specification {
+    width: 1300px;
+    padding: 65px 0 65px 0;
+    background-color: #55575A;
+}
+
+.specification_h {
+    padding: 0;
+    width: 1300px;
+    height: 55px;
+    margin-bottom: 30px;
+    font-size: 52px;
+    text-align: center;
+    font-style: italic;
+    color: #FFF;
+    font-weight: 800;
+}
+
+.specification_text {
+    width: 1140px;
+    height: auto;
+    padding: 30px 30px 10px 30px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+
+.specification_text_title {
+    width: 1140px;
+    height: 40px;
+    text-transform: uppercase;
+    font-size: 28px;
+    color: #790002;
+    font-weight: 900;
+}
+
+.atvdetails_table {
+    width: 1140px;
+    margin-bottom: 20px;
+}
+
+.table_dark_line {
+    width: 1140px;
+    height: 40px;
+    background-color: #E2E2E2;
+}
+
+    .table_dark_line td {
+        width: 570px;
+        color: #1F1F1F;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+.table_light_line {
+    width: 1140px;
+    height: 40px;
+    background-color: #fff;
+}
+
+    .table_light_line td {
+        width: 570px;
+        font-size: 16px;
+        color: #1F1F1F;
+        font-weight: 600;
+    }

@@ -1,0 +1,65 @@
+﻿@using Quad_Shop.HtmlpageHelpers
+@using Quad_Shop.Models
+@model Pagelist
+
+
+@{
+    ViewBag.Title = "ShowProduct";
+}
+<div class="show_product_wrapper">
+    <div class="side">
+        @Html.Action("ShowCategories", "Home")
+
+        @using (Html.BeginForm("ShowProduct", "Home", FormMethod.Get))
+        {
+            @Html.Hidden("category", (String)ViewBag.category)
+            @Html.TextBox("cylinderdisplacementfrom", (String)ViewBag.intcylinder_displacement_from)
+            @Html.TextBox("cylinderdisplacementto", (String)ViewBag.intcylinder_displacement_to)
+            @Html.TextBox("price_from", (String)ViewBag.intprice_from)
+            @Html.TextBox("price_to", (String)ViewBag.intprice_to)
+            @Html.DropDownList("sort", ViewBag.brands as SelectList)
+            @ViewBag.lol
+            <input type="submit" value="Filter" />
+        }
+    </div>
+
+    <div class="main">
+        <div class="main_field">
+            @foreach (var b in Model.ATVDescriptions)
+            {
+                <div class="product_cell">
+                    <div class="product_cell_top">
+                        <img class="cell_img" src="~/Images/Images/@b.Image" alt="@b.Image">
+                    </div>
+                    <div class="product_cell_bottom">
+                        <div class="text_model">
+                            <span>@b.ATVBrand.Brand</span>
+                            <span>@b.Model</span>
+                        </div>
+                        <div class="text_model_price">
+                            <span>Price: @b.Price $</span>
+                        </div>
+                        <div class="cell_buttons">
+                            @Html.ActionLink("Details", "AtvDetails", "Home", new { atv_id = @b.ATVDescriptionID }, new { @class = "cell_button" })
+                            @Html.ActionLink("Add to cart", "AddToCart", "Home", new { id = @b.ATVDescriptionID }, new { @class = "cell_button" })
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+        <div class="pages_links">
+            @Html.PageLinks(Model.pageinfo, x => Url.Action("Showproduct", new
+            {
+           category = ViewBag.category,
+           cylinderdisplacementfrom = ViewBag.intcylinder_displacement_from,
+           cylinderdisplacementto = ViewBag.intcylinder_displacement_to,
+           price_from = ViewBag.intprice_from,
+           price_to = ViewBag.intprice_to,
+           page = x
+            }))
+        </div>
+    </div>
+
+</div>
+

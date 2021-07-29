@@ -1,0 +1,72 @@
+﻿@model IEnumerable<Quad_Shop.Models.Cart>
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="cart_list_wrapper">
+    <div class="cart_top">
+        <span>Cart</span>
+    </div>
+    @foreach (var cartitem in Model)
+    {
+        <div class="cart_list_cell">
+            <div class="cart_list_cell_img">
+                <img src="~/Images/Images/@cartitem.ATVDescription.Image" alt="">
+            </div>
+            <div class="cart_list_cell_description">
+                <div class="cart_cell_description_table">
+                    <table class="cart_description_table" cellspacing=0>
+                        <tr>
+                            <td class="cart_left_item">Brand:</td>
+                            <td class="cart_right_item">@cartitem.ATVDescription.ATVBrand.Brand</td>
+                        </tr>
+                        <tr>
+                            <td class="cart_left_item">Model:</td>
+                            <td class="cart_right_item">@cartitem.ATVDescription.Model</td>
+                        </tr>
+                        <tr>
+                            <td class="cart_left_item">Color:</td>
+                            <td class="cart_right_item">@cartitem.ATVDescription.Color</td>
+                        </tr>
+                        <tr>
+                            <td class="cart_left_item">Price:</td>
+                            <td class="cart_right_item">@cartitem.ATVDescription.Price</td>
+                        </tr>
+                        <tr>
+                            <td class="cart_left_item">Count:</td>
+                            <td class="cart_right_item">@cartitem.Count</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="cart_cell_description_button">
+                    <div class="cart_button_div">
+                        @Html.ActionLink("Details", "AtvDetails", "Home", new { atv_id = cartitem.ATVDescriptionID }, new { @class = "cart_button_div_details" })
+                    </div>
+                    <div class="cart_button_div">
+                        @Html.ActionLink("Delete", "RemoveFromCart", "Home", new { id = cartitem.CartID }, new { @class = "cart_button_div_delete" })
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    @if (ViewBag.CartCount == 0)
+    {
+        <div class="cart_list_bottom_wrapper">
+            <div class="cart_list_bottom_wrapper_container">
+                <div class="cart_list_bottom_wrapper_top">
+                    <span>Your cart is empty.</span>
+                </div>
+                <div class="cart_list_bottom_wrapper_bottom">
+                    @Html.ActionLink("Start Shopping", "ShowProduct", "Home", new { @class = "cart_button_div_stshp" })
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <div class="cart_list_bottom">
+            @Html.ActionLink("Create Order", "CreateOrder", "Home", new { @class = "cart_button_div_createorder" })
+        </div>
+    }
+</div>

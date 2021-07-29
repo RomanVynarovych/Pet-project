@@ -1,0 +1,92 @@
+﻿body {
+}
+
+.createorders_list_wrapper {
+    min-height: calc(100vh - 90px);
+    width: 1300px;
+    padding: 0;
+    margin: 0 auto;
+    
+}
+
+.createorders_top {
+    width: 1300px;
+    height: 50px;
+    margin: 15px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .createorders_top span {
+        font-size: 30px;
+        color: #adadad;
+    }
+
+.createorders_table {
+    width: 504px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.createorder_table tr td{
+    width: 250px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.createorder_table tr td span {
+    color: #adadad;
+    font-size: 25px;
+}
+
+.createorders_editorfor {
+    width: 250px;
+    height: 25px;
+    font-size: 20px;
+}
+
+.createorders_btn {
+    width: 450px;
+    height: 50px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.createorders_input {
+    width: 200px;
+    height: 40px;
+    background: none;
+    border: 2px solid;
+    border-color: #adadad;
+    color: #adadad;
+    font-size: 25px;
+    border-radius: 5px;
+}
+
+    .createorders_input:hover {
+        border-color: #fff;
+        color: #fff;
+    }
+
+.createorders_cancell {
+    width: 200px;
+    height: 40px;
+    background: none;
+    border: 2px solid;
+    border-color: #adadad;
+    color: #adadad;
+    font-size: 25px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+    .createorders_cancell:hover {
+        border-color: #fff;
+        color: #fff;
+    }

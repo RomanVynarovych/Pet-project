@@ -1,0 +1,224 @@
+﻿body {
+}
+
+.cart_list_wrapper {
+    min-height: calc(100vh - 100px);
+    width: 1300px;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.cart_top {
+    width: 1300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0 20px 0;
+}
+
+    .cart_top span {
+        font-size: 30px;
+        color: #adadad;
+    }
+
+.cart_list_cell {
+    width: 1300px;
+    height: 400px;
+    border-bottom: 2px solid;
+    border-color: #adadad;
+    border-radius: 2px;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.cart_list_cell_img {
+    height: 400px;
+    width: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .cart_list_cell_img img {
+        height: 350px;
+        width: auto;
+    }
+.cart_list_cell_description {
+    width: 500px;
+    height: 400px;
+}
+
+.cart_cell_description_table {
+    width: 450px;
+    height: 250px;
+    margin: 25px 25px 0 25px;
+}
+
+.cart_description_table tr {
+    height: 50px;
+    width: 450px;
+}
+
+.cart_left_item {
+    width: 125px;
+    height: 50px;
+    font-size: 30px;
+    color: #adadad;
+}
+
+.cart_right_item {
+    width: 325px;
+    height: 50px;
+    font-size: 30px;
+    color: #adadad;
+}
+
+.cart_cell_description_button {
+    width: 500px;
+    height: 100px;
+    display: flex;
+}
+
+.cart_button_div {
+    width: 250px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_button_div_details {
+    width: 205px;
+    height: 60px;
+    background: none;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #adadad;
+    text-decoration: none;
+    color: #adadad;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .cart_button_div_details:hover {
+        border-color: #fff;
+        border: 3px solid;
+        color: #fff;
+        text-decoration: underline;
+    }
+
+.cart_button_div_delete {
+    width: 205px;
+    height: 60px;
+    background: none;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #adadad;
+    text-decoration: none;
+    color: red;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .cart_button_div_delete:hover {
+        border-color: red;
+        border: 5px solid;
+        font-weight: bold;
+        text-decoration: underline;
+        background-color: #fff;
+    }
+
+.cart_list_bottom{
+    width: 1300px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_list_bottom_wrapper {
+    min-height: calc(100vh - 170px);
+    width: 1300px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_list_bottom_wrapper_container {
+    width: 500px;
+    height: 200px;
+}
+
+.cart_list_bottom_wrapper_top {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .cart_list_bottom_wrapper_top span {
+        font-size: 30px;
+        color: #adadad;
+    }
+
+.cart_button_div_stshp {
+    width: 250px;
+    height: 60px;
+    background: none;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #adadad;
+    text-decoration: none;
+    color: #adadad;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .cart_button_div_stshp:hover {
+        border-color: #fff;
+        border: 3px solid;
+        color: #fff;
+        text-decoration: underline;
+    }
+
+.cart_list_bottom_wrapper_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart_button_div_createorder {
+    width: 205px;
+    height: 60px;
+    background: none;
+    border: 2px solid;
+    border-radius: 5px;
+    border-color: #adadad;
+    text-decoration: none;
+    color: red;
+    font-size: 25px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .cart_button_div_createorder:hover {
+        border-color: #fff;
+        color: #fff;
+        border: 3px solid;
+        text-decoration: underline;
+        background-color: none;
+    }

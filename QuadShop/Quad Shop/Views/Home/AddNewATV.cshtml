@@ -1,0 +1,159 @@
+﻿@model Quad_Shop.Models.ATVDescription
+@{
+    ViewBag.Title = "AddNewATV";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@using (Html.BeginForm("AddNewATV", "Home", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    <div class="productediting_wrapper">
+        <div class="productediting">
+            <span>Add new product</span>
+        </div>
+        <div class="productediting_overview">
+            <div class="productediting_overview_container">
+                <div class="productediting_overview_left">
+                    <img src="" alt="" id="edit_img" class="overview_left_img" />
+                </div>
+            </div>
+        </div>
+        <div class="productediting_specification">
+            <div class="productediting_specification_button">
+                <label for="image_uploads">Add new image</label>
+                <input class="class_input" type="file" name="uploadFile" id="image_uploads" accept=".jpg, .jpeg, .png" multiple>
+            </div>
+            <div class="productediting_specification_text">
+                @Html.HiddenFor(model => model.ATVDescriptionID)
+                @Html.HiddenFor(model => model.Image)
+                <table class="productediting_table" cellspacing=0>
+                    <tr class="productediting_table_dark_line">
+                        <td>Brand:</td>
+                        <td>@Html.TextBox("Brand", "Brand")</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Model:</td>
+                        <td>@Html.EditorFor(model => model.Model, new { htmlAttributes = new { Placeholder = "Model", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Price:</td>
+                        <td>@Html.EditorFor(model => model.Price, new { htmlAttributes = new { Placeholder = "Price", @class = "productediting_edit_editorfor" } }) $</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Stock:</td>
+                        <td>@Html.EditorFor(model => model.Stock, new { htmlAttributes = new { Placeholder = "Stock", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Engine Type:</td>
+                        <td>@Html.EditorFor(model => model.Engine_Type, new { htmlAttributes = new { Placeholder = "Engine Type", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Cylinder Displacement:</td>
+                        <td>@Html.EditorFor(model => model.Cylinder_Displacement, new { htmlAttributes = new { Placeholder = "Cylinder Displacement", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Fuel System:</td>
+                        <td>@Html.EditorFor(model => model.Fuel_System, new { htmlAttributes = new { Placeholder = "Fuel System", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Cooling:</td>
+                        <td>@Html.EditorFor(model => model.Cooling, new { htmlAttributes = new { Placeholder = "Cooling", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Trasmission:</td>
+                        <td>@Html.EditorFor(model => model.Transmission, new { htmlAttributes = new { Placeholder = "Trasmission", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Drive System:</td>
+                        <td>@Html.EditorFor(model => model.Drive_System, new { htmlAttributes = new { Placeholder = "Drive System", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Locking Differential:</td>
+                        <td>@Html.EditorFor(model => model.Locking_Differencial, new { htmlAttributes = new { Placeholder = "Locking Differential", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Front Suspension:</td>
+                        <td>@Html.EditorFor(model => model.Front_Suspension, new { htmlAttributes = new { Placeholder = "Front Suspension", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Rear Suspension:</td>
+                        <td>@Html.EditorFor(model => model.Rear_Suspension, new { htmlAttributes = new { Placeholder = "Rear Suspension", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Front Brakes:</td>
+                        <td>@Html.EditorFor(model => model.Front_Brakes, new { htmlAttributes = new { Placeholder = "Front Brakes", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Rear Brakes:</td>
+                        <td>@Html.EditorFor(model => model.Rear_Brakes, new { htmlAttributes = new { Placeholder = "Rear Brakes", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Parking Brakes:</td>
+                        <td>@Html.EditorFor(model => model.Parking_Brake, new { htmlAttributes = new { Placeholder = "Parking Brakes", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Wheels:</td>
+                        <td>@Html.EditorFor(model => model.Wheels, new { htmlAttributes = new { Placeholder = "Wheels", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Lenght:</td>
+                        <td>@Html.EditorFor(model => model.Length, new { htmlAttributes = new { Placeholder = "Lenght", @class = "productediting_edit_editorfor" } }) cm</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Widht:</td>
+                        <td>@Html.EditorFor(model => model.Width, new { htmlAttributes = new { Placeholder = "Widht", @class = "productediting_edit_editorfor" } }) cm</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Height:</td>
+                        <td>@Html.EditorFor(model => model.Hight, new { htmlAttributes = new { Placeholder = "Height", @class = "productediting_edit_editorfor" } }) cm</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Weight:</td>
+                        <td>@Html.EditorFor(model => model.Weight, new { htmlAttributes = new { Placeholder = "Weight", @class = "productediting_edit_editorfor" } }) kg</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Fuel Capacity:</td>
+                        <td>@Html.EditorFor(model => model.Fuel_Capacity, new { htmlAttributes = new { Placeholder = "Fuel Capacity", @class = "productediting_edit_editorfor" } }) l</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Instrumentation:</td>
+                        <td>@Html.EditorFor(model => model.Instrumentation, new { htmlAttributes = new { Placeholder = "Instrumentation", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Brake Lights:</td>
+                        <td>@Html.EditorFor(model => model.Brake_Lights, new { htmlAttributes = new { Placeholder = "Brake Lights", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Head Lights:</td>
+                        <td>@Html.EditorFor(model => model.Head_Lights, new { htmlAttributes = new { Placeholder = "Head Lights", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Turn Signals:</td>
+                        <td>@Html.EditorFor(model => model.Turn_Signal, new { htmlAttributes = new { Placeholder = "Turn Signals", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Horn:</td>
+                        <td>@Html.EditorFor(model => model.Horn, new { htmlAttributes = new { Placeholder = "Horn", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Cargo Rocks:</td>
+                        <td>@Html.EditorFor(model => model.Cargo_Rocks, new { htmlAttributes = new { Placeholder = "Cargo Rocks", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_dark_line">
+                        <td>Color:</td>
+                        <td>@Html.EditorFor(model => model.Color, new { htmlAttributes = new { Placeholder = "Color", @class = "productediting_edit_editorfor" } })</td>
+                    </tr>
+                    <tr class="productediting_table_light_line">
+                        <td>Warranty:</td>
+                        <td>@Html.EditorFor(model => model.Warranty, new { htmlAttributes = new { Placeholder = "Warranty", @class = "productediting_edit_editorfor" } }) month</td>
+                    </tr>
+                </table>
+            </div>
+            <script src="~/Scripts/edit.js" type="text/javascript"></script>
+            <div class="productediting_specification_button">
+                @Html.ActionLink("Cancel", "EditList", "Home", null, new { @class = "productediting_cancel_button" })
+                <input class="productediting_submit_button" type="submit" value="Save" />
+            </div>
+        </div>
+    </div>
+}
+

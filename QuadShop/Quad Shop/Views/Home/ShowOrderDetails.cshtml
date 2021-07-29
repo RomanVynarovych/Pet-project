@@ -1,0 +1,33 @@
+﻿@model IEnumerable<Quad_Shop.Models.OrdersDetail>
+@{
+    ViewBag.Title = "ShowOrderDetails";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="showorderdetails_list_wrapper">
+    <div class="showorderdetails_top">
+        <span>Order Details</span>
+    </div>
+    <table class="showorderdetails_table" cellspacing=0>
+        <tr>
+            <th class="showorderdetails_table_img_top"> </th>
+            <th class="showorderdetails_table_brand_top"><span>Brand</span></th>
+            <th class="showorderdetails_table_model_top"><span>Model</span></th>
+            <th class="showorderdetails_table_color_top"><span>Color</span></th>
+            <th class="showorderdetails_table_quantity_top"><span>Quantity</span></th>
+            <th class="showorderdetails_table_unitprice_top"><span>Unit Price</span></th>
+        </tr>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <th class="showorderdetails_table_img"><img src="~/Images/Images/@item.ATVDescription.Image" alt="@item.ATVDescription.Model" /></th>
+                <th class="showorderdetails_table_brand"><span>@item.ATVDescription.ATVBrand.Brand</span></th>
+                <th class="showorderdetails_table_model"><span>@item.ATVDescription.Model</span></th>
+                <th class="showorderdetails_table_color"><span>@item.ATVDescription.Color</span></th>
+                <th class="showorderdetails_table_quantity"><span>@item.Quantity</span></th>
+                <th class="showorderdetails_table_unitprice"><span>@item.Unit_Price $</span></th>
+            </tr>
+        }
+    </table>
+    @Html.Action("ShowOrderDetailsPartial", "Home", new { id = ViewBag.OrderID })
+</div>
